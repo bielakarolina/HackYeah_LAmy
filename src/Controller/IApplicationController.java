@@ -10,6 +10,7 @@ import javafx.scene.text.Text;
 public interface IApplicationController {
 
     public void show();
-    public Canvas createGame(String nameGame);
+    public void createGame(String nameGame);
+    public void message();
 
 }

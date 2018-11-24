@@ -24,17 +24,17 @@ public class ApplicationController implements IApplicationController {
     }
 
     @Override
-    public Canvas createGame(String nameGame) {
+    public void createGame(String nameGame) {
 
 
         switch (nameGame) {
-            case "ColoringGame":
-                System.out.println("Kolorowanka");
-                return ColoringGame;
+            case "Numbers":
+                System.out.println("Cyferki");
+
 
             default: {
                 System.out.println("Nie ma takiej gry");
-                return null;
+
             }
         }
 
