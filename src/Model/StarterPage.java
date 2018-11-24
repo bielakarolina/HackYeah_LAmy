@@ -8,6 +8,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
@@ -62,7 +63,7 @@ public class StarterPage {
 
     public void showStarterPage(){
 
-        Button firstBttn = new Button("Log In");
+        ToggleButton firstBttn = new ToggleButton("Log In");
         firstBttn.setId("loginBttn");
         firstBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -71,7 +72,7 @@ public class StarterPage {
             }
         });
 
-        Button secondBttn = new Button("Log In");
+        ToggleButton secondBttn = new ToggleButton("Log In");
         secondBttn.setId("loginBttn");
         secondBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -80,7 +81,7 @@ public class StarterPage {
             }
         });
 
-        Button thirdBttn = new Button("Log In");
+        ToggleButton thirdBttn = new ToggleButton("Log In");
         thirdBttn.setId("loginBttn");
         thirdBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -89,7 +90,7 @@ public class StarterPage {
             }
         });
 
-        Button fourthBttn = new Button("Log In");
+        ToggleButton fourthBttn = new ToggleButton("Log In");
         fourthBttn.setId("loginBttn");
         fourthBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -98,7 +99,7 @@ public class StarterPage {
             }
         });
 
-        Button fifthBttn = new Button("Log In");
+        ToggleButton fifthBttn = new ToggleButton("Log In");
         fifthBttn.setId("loginBttn");
         fifthBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -107,7 +108,7 @@ public class StarterPage {
             }
         });
 
-        Button sixthBttn = new Button("Log In");
+        ToggleButton sixthBttn = new ToggleButton("Log In");
         sixthBttn.setId("loginBttn");
         sixthBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -116,7 +117,7 @@ public class StarterPage {
             }
         });
 
-        Button seventhBttn = new Button("Log In");
+        ToggleButton seventhBttn = new ToggleButton("Log In");
         seventhBttn.setId("loginBttn");
         seventhBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -125,7 +126,7 @@ public class StarterPage {
             }
         });
 
-        Button eightBttn = new Button("Log In");
+        ToggleButton eightBttn = new ToggleButton("Log In");
         eightBttn.setId("loginBttn");
         eightBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -134,7 +135,7 @@ public class StarterPage {
             }
         });
 
-        Button ninthBttn = new Button("Log In");
+        ToggleButton ninthBttn = new ToggleButton("Log In");
         ninthBttn.setId("loginBttn");
         ninthBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -143,7 +144,7 @@ public class StarterPage {
             }
         });
 
-        Button tenthBttn = new Button("Log In");
+        ToggleButton tenthBttn = new ToggleButton("Log In");
         tenthBttn.setId("loginBttn");
         tenthBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -157,7 +158,6 @@ public class StarterPage {
         goBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-                System.out.println(years);
                 DesktopPage menu = new DesktopPage();
                 menu.showDesktopPage();
                 owner.close();
@@ -171,12 +171,12 @@ public class StarterPage {
         root.setAlignment(Pos.CENTER);
     }
 
-    public void handlePressed(Button button){
-        if(button.isPressed()){
-            this.years--;
+    public void handlePressed(ToggleButton button){
+        if(button.isSelected()){
+            this.years++;
         }
         else{
-            this.years++;
+            this.years--;
         }
     }
     
