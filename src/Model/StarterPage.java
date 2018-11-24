@@ -16,11 +16,11 @@ import javafx.stage.StageStyle;
 
 public class StarterPage {
     private Stage owner;
-    private int widthScene=650;
-    private int heightScene=600;
-    private int widthStage=650;
-    private int heightStage=600;
-    private String title = "Login";
+    private int widthScene=850;
+    private int heightScene=700;
+    private int widthStage=850;
+    private int heightStage=700;
+    private String title = "Oldness";
     private Scene scene;
     private VBox root;
     private int topMarg = 15;
@@ -35,6 +35,7 @@ public class StarterPage {
         owner = new Stage(StageStyle.DECORATED);
         root = new VBox();
         scene = new Scene(root, widthScene, heightScene);
+        scene.getStylesheets().add(StarterPage.class.getResource("../stylesheet/desktop.css").toExternalForm());
         setStageProperty();
         setHBoxProperty();
     }
@@ -159,7 +160,7 @@ public class StarterPage {
 
         root.getChildren().addAll(firstBttn, secondBttn, thirdBttn, fourthBttn, fifthBttn, sixthBttn, seventhBttn,
                 eightBttn, ninthBttn, tenthBttn, goBttn);
-        root.setAlignment(Pos.CENTER);
+        root.setAlignment(Pos.BASELINE_CENTER);
     }
     
 }
