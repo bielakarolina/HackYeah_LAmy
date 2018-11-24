@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a70637f6-7d1d-47c3-96a7-55f262b61773" name="Default" comment="NumbersController">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller/LettersController.java" />
+    <list default="true" id="a70637f6-7d1d-47c3-96a7-55f262b61773" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LettersController.java" afterPath="$PROJECT_DIR$/src/Controller/LettersController.java" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/NumbersController.java" afterPath="$PROJECT_DIR$/src/Controller/NumbersController.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,27 +41,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NumbersController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NumbersController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/NumbersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="40" column="6" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="40" selection-end-column="6" />
+            <state relative-caret-position="485">
+              <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
               <folding>
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LettersController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LettersController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/LettersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
               <folding>
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -225,8 +226,8 @@
         <option value="$PROJECT_DIR$/src/Controller/ParseMessage.java" />
         <option value="$PROJECT_DIR$/src/Controller/ApplicationController.java" />
         <option value="$PROJECT_DIR$/src/Controller/ISmallChild.java" />
-        <option value="$PROJECT_DIR$/src/Controller/NumbersController.java" />
         <option value="$PROJECT_DIR$/src/Controller/LettersController.java" />
+        <option value="$PROJECT_DIR$/src/Controller/NumbersController.java" />
       </list>
     </option>
   </component>
@@ -552,7 +553,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543077681293</updated>
-      <workItem from="1543079193407" duration="12642000" />
+      <workItem from="1543079193407" duration="13268000" />
     </task>
     <task id="LOCAL-00001" summary="Startgame">
       <created>1543080453311</created>
@@ -610,11 +611,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543092765497</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="NumbersController">
+      <created>1543093696140</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1543093696140</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12642000" />
+    <option name="totallyTimeSpent" value="13268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -788,24 +796,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/NumbersController.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/LettersController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="40" column="6" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="40" selection-end-column="6" />
+        <state relative-caret-position="510">
+          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
           <folding>
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/LettersController.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/NumbersController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="485">
+          <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
           <folding>
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
           </folding>
         </state>
       </provider>

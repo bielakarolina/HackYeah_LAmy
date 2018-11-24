@@ -6,8 +6,7 @@ public class LettersController {
     public String message;
     public Voice voice;
     public ParseMessage parseMessage;
-    public String correctAnswear;
-
+    public String correctAnswer;
 
     public LettersController(String message){
         this.message = message;
@@ -26,13 +25,13 @@ public class LettersController {
             Random r = new Random();
             generatedLetters[i] = String.valueOf(r.nextInt((26) + 'a'));
         }
-        correctAnswear = generatedLetters[new Random().nextInt(generatedLetters.length-1)];
-        generatedLetters[3]=correctAnswear;
+        correctAnswer = generatedLetters[new Random().nextInt(generatedLetters.length-1)];
+        generatedLetters[3]=correctAnswer;
         return generatedLetters;
     };
 
     public boolean iscorrect(String message){
-        if(message.equals(correctAnswear))
+        if(message.equals(correctAnswer))
             return true;
 
         return false;
