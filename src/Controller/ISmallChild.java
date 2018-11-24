@@ -1,4 +1,4 @@
 package Controller;
 
-public interface SmallChild extends StartGame {
+public interface ISmallChild extends IApplicationController {
 }
