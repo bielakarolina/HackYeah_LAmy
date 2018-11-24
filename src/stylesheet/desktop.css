@@ -2,20 +2,15 @@
     -fx-background-image: url("images/baloons.jpg");
 }
 
-
+.button {
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+    -fx-font-size: 20px;
+    -fx-pref-width: 350px;
+}
 #go{
     -fx-background-color: red;
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
 
 }
 
-.button{
-    -fx-background-color: white;
-    -fx-background-radius: 0;
-    -fx-font-size: 20px;
-    -fx-margin-left: 50px;
-    -fx-margin-right: 50px;
-    -fx-border-insets: 10px;
-    -fx-background-insets: 10px;
-
-}
