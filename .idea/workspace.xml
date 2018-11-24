@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a70637f6-7d1d-47c3-96a7-55f262b61773" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ISmallChild.java" afterPath="$PROJECT_DIR$/src/Controller/ISmallChild.java" />
       <change beforePath="$PROJECT_DIR$/src/Controller/NumbersController.java" afterPath="$PROJECT_DIR$/src/Controller/NumbersController.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,13 +43,11 @@
       <file leaf-file-name="NumbersController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/NumbersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+            <state relative-caret-position="625">
+              <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
               <folding>
                 <element signature="e#294#295#0" expanded="true" />
                 <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -541,7 +538,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543077681293</updated>
-      <workItem from="1543079193407" duration="10672000" />
+      <workItem from="1543079193407" duration="11728000" />
     </task>
     <task id="LOCAL-00001" summary="Startgame">
       <created>1543080453311</created>
@@ -585,11 +582,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543090697894</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="NumbersController">
+      <created>1543091637066</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543091637066</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10672000" />
+    <option name="totallyTimeSpent" value="11728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -765,13 +769,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/NumbersController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+        <state relative-caret-position="625">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
           <folding>
             <element signature="e#294#295#0" expanded="true" />
             <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
           </folding>
         </state>
       </provider>

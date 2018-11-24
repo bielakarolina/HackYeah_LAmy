@@ -33,8 +33,11 @@ public class NumbersController {
         return generatedNumbers;
     };
 
-     public boolean iscorrect(){
-        return false;
+     public boolean iscorrect(String message){
+         if(message.equals(Integer.toString(correctAnswear)))
+                return true;
+
+         return false;
     };
 
 }
