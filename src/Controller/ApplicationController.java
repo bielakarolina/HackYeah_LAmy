@@ -41,5 +41,10 @@ public class ApplicationController implements IApplicationController {
 
     }
 
+    @Override
+    public void message() {
+
+    }
+
 
 }
