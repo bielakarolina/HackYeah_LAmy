@@ -16,11 +16,11 @@ import javafx.stage.StageStyle;
 
 public class DesktopPage {
     private Stage owner;
-    private int widthScene=650;
-    private int heightScene=600;
-    private int widthStage=650;
-    private int heightStage=600;
-    private String title = "Login";
+    private int widthScene=850;
+    private int heightScene=700;
+    private int widthStage=850;
+    private int heightStage=700;
+    private String title = "Start";
     private Scene scene;
     private VBox root;
     private int topMarg = 15;
@@ -35,6 +35,7 @@ public class DesktopPage {
         owner = new Stage(StageStyle.DECORATED);
         root = new VBox();
         scene = new Scene(root, widthScene, heightScene);
+        scene.getStylesheets().add(DesktopPage.class.getResource("../stylesheet/desktop.css").toExternalForm());
         setStageProperty();
         setHBoxProperty();
     }
@@ -55,34 +56,12 @@ public class DesktopPage {
 
     public void showDesktopPage(){
 
-        TextField loginText = new TextField();
-        loginText.setMaxSize(140, TextField.USE_COMPUTED_SIZE);
-        loginText.setOnKeyPressed(new EventHandler<KeyEvent>() {
-            @Override
-            public void handle(KeyEvent ke) {
-                if (ke.getCode().equals(KeyCode.ENTER)) {
-
-                    // LibrariesPage login = new LibrariesPage();
-                    // login.showLibrariesPage(libraries);
-                }
-            }
-        });
-        TextField passwordText = new TextField();
-        passwordText.setMaxSize(140, TextField.USE_COMPUTED_SIZE);
-        passwordText.setOnKeyPressed(new EventHandler<KeyEvent>() {
-            @Override
-            public void handle(KeyEvent ke) {
-                if (ke.getCode().equals(KeyCode.ENTER)) {
-                    handleBttn(loginText.getText(), passwordText.getText());
-                }
-            }
-        });
-        Button loginBttn = new Button("Log In");
-        loginBttn.setId("loginBttn");
+        Button loginBttn = new Button("Paint");
+        loginBttn.setId("Paint");
         loginBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-                handleBttn(loginText.getText(), passwordText.getText());
+                //handleBttn(loginText.getText(), passwordText.getText());
             }
         });
 
@@ -95,8 +74,8 @@ public class DesktopPage {
             }
         });
 
-        root.getChildren().addAll(loginText, passwordText, loginBttn, endGame);
-        root.setAlignment(Pos.CENTER);
+        root.getChildren().addAll(loginBttn, endGame);
+        root.setAlignment(Pos.BASELINE_CENTER);
     }
 
     public void handleBttn(String login, String password){
