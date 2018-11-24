@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -28,6 +29,8 @@ public class StarterPage {
     private int bottomMarg = 15;
     private int leftMarg = 12;
     private int rootSpacing = 10;
+    private HBox hbox;
+    public int years;
 
     public StarterPage(){
 
@@ -36,7 +39,9 @@ public class StarterPage {
         root = new VBox();
         scene = new Scene(root, widthScene, heightScene);
         setStageProperty();
-        setHBoxProperty();
+        this.years = 0;
+        this.hbox = new HBox();
+        setBoxProperty();
     }
 
     public void setStageProperty(){
@@ -48,9 +53,11 @@ public class StarterPage {
         owner.show();
     }
 
-    public void setHBoxProperty() {
+    public void setBoxProperty() {
         root.setPadding(new Insets(topMarg, rightMarg, bottomMarg, leftMarg));
         root.setSpacing(rootSpacing);
+        hbox.setPadding(new Insets(topMarg, rightMarg, bottomMarg, leftMarg));
+        hbox.setSpacing(rootSpacing);
     }
 
     public void showStarterPage(){
@@ -60,7 +67,7 @@ public class StarterPage {
         firstBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-
+                handlePressed(firstBttn);
             }
         });
 
@@ -69,7 +76,7 @@ public class StarterPage {
         secondBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-
+                handlePressed(secondBttn);
             }
         });
 
@@ -78,7 +85,7 @@ public class StarterPage {
         thirdBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-
+                handlePressed(thirdBttn);
             }
         });
 
@@ -87,7 +94,7 @@ public class StarterPage {
         fourthBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-
+                handlePressed(fourthBttn);
             }
         });
 
@@ -96,7 +103,7 @@ public class StarterPage {
         fifthBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-
+                handlePressed(fifthBttn);
             }
         });
 
@@ -105,7 +112,7 @@ public class StarterPage {
         sixthBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-
+                handlePressed(sixthBttn);
             }
         });
 
@@ -114,7 +121,7 @@ public class StarterPage {
         seventhBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-
+                handlePressed(seventhBttn);
             }
         });
 
@@ -123,7 +130,7 @@ public class StarterPage {
         eightBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-
+                handlePressed(eightBttn);
             }
         });
 
@@ -132,7 +139,7 @@ public class StarterPage {
         ninthBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-
+                handlePressed(ninthBttn);
             }
         });
 
@@ -141,25 +148,36 @@ public class StarterPage {
         tenthBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-
+                handlePressed(tenthBttn);
             }
         });
-
 
         Button goBttn = new Button("Go");
         goBttn.setId("go");
         goBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
+                System.out.println(years);
                 DesktopPage menu = new DesktopPage();
                 menu.showDesktopPage();
                 owner.close();
             }
         });
 
-        root.getChildren().addAll(firstBttn, secondBttn, thirdBttn, fourthBttn, fifthBttn, sixthBttn, seventhBttn,
-                eightBttn, ninthBttn, tenthBttn, goBttn);
+        hbox.getChildren().addAll(firstBttn, secondBttn, thirdBttn, fourthBttn, fifthBttn, sixthBttn, seventhBttn,
+                eightBttn, ninthBttn, tenthBttn);
+
+        root.getChildren().addAll(hbox, goBttn);
         root.setAlignment(Pos.CENTER);
+    }
+
+    public void handlePressed(Button button){
+        if(button.isPressed()){
+            this.years--;
+        }
+        else{
+            this.years++;
+        }
     }
     
 }
