@@ -29,7 +29,7 @@ public class NumbersPage {
     private int leftMarg = 12;
     private int rootSpacing = 10;
     public HBox hbox;
-    public NumberControler number;
+   // public NumberControler number;
 
     public NumbersPage(){
 
@@ -40,7 +40,7 @@ public class NumbersPage {
         hbox = new HBox();
         setStageProperty();
         setHBoxProperty();
-        number = new NumberControler();
+       // number = new NumberControler();
     }
 
     public void setStageProperty(){
@@ -60,8 +60,9 @@ public class NumbersPage {
     }
 
     public void showNumbersPage(){
-        int chosen = number.generatorOneNumber();
-
+        int chosen;
+        //chosen = number.generatorOneNumber();
+        ImageView imageView = getImage(1);
 
         Button prevBttn = new Button("<-");
         prevBttn.setId("loginBttn");
@@ -105,46 +106,55 @@ public class NumbersPage {
         showNumbersPage();
     }
 
-    public Image getImage(int chosen){
-        Image image;
+    public ImageView getImage(int chosen){
+        Image image = null;
         switch(chosen) {
             case 0: {
-                image =
+                image = new Image("stylesheet/images/0.png");
+                break;
             }
             case 1: {
-                image =
+                image = new Image("stylesheet/images/1.png");
+                break;
+            }
+            case 2: {
+                image = new Image("stylesheet/images/2.png");
+                break;
             }
             case 3: {
-                image =
+                image = new Image("stylesheet/images/3.png");
+                break;
             }
             case 4: {
-                image =
+                image = new Image("stylesheet/images/4.png");
+                break;
             }
             case 5: {
-                image =
+                image = new Image("stylesheet/images/5.png");
+                break;
             }
             case 6: {
-                image =
+                image = new Image("stylesheet/images/6.png");
+                break;
             }
             case 7: {
-                image =
+                image = new Image("stylesheet/images/7.png");
+                break;
             }
             case 8: {
-                image =
+                image = new Image("stylesheet/images/8.png");
+                break;
             }
             case 9: {
-                image =
+                image = new Image("stylesheet/images/9.png");
+                break;
             }
-              
-
-
-
-
 
 
         }
 
         ImageView imageView = new ImageView(image);
+        return imageView;
     }
 
 }

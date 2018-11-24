@@ -61,6 +61,9 @@ public class DesktopPage {
         loginBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
+                NumbersPage menu = new NumbersPage();
+                menu.showNumbersPage();
+                owner.close();
                 //handleBttn(loginText.getText(), passwordText.getText());
             }
         });
