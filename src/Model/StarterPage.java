@@ -151,14 +151,24 @@ public class StarterPage {
         goBttn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-                DesktopPage menu = new DesktopPage();
-                menu.showDesktopPage();
+                GamePage game = new GamePage();
+                game.showDesktopPage();
                 owner.close();
             }
         });
 
+        Button endGame = new Button("QUIT");
+        endGame.setId("end");
+        endGame.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                owner.close();
+            }
+        });
+
+
         root.getChildren().addAll(firstBttn, secondBttn, thirdBttn, fourthBttn, fifthBttn, sixthBttn, seventhBttn,
-                eightBttn, ninthBttn, tenthBttn, goBttn);
+                eightBttn, ninthBttn, tenthBttn, goBttn, endGame);
         root.setAlignment(Pos.CENTER);
     }
     
