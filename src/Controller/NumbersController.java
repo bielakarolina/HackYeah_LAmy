@@ -6,7 +6,7 @@ public class NumbersController {
     public String message;
     public Voice voice;
     public ParseMessage parseMessage;
-    public int correctAnswer;
+    public int correctAnswear;
     public int max = 9;
     public int min = 0;
 
@@ -28,13 +28,13 @@ public class NumbersController {
             Random r = new Random();
             generatedNumbers[i] = r.nextInt((max - min) + 1) + min;
         }
-        correctAnswer = generatedNumbers[new Random().nextInt(generatedNumbers.length-1)];
-        generatedNumbers[3]=correctAnswer;
+        correctAnswear = generatedNumbers[new Random().nextInt(generatedNumbers.length-1)];
+        generatedNumbers[3]=correctAnswear;
         return generatedNumbers;
     };
 
      public boolean iscorrect(String message){
-         if(message.equals(Integer.toString(correctAnswer)))
+         if(message.equals(Integer.toString(correctAnswear)))
                 return true;
 
          return false;

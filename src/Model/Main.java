@@ -1,21 +1,15 @@
 package Model;
 
 import javafx.application.Application;
-import javafx.scene.control.Menu;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
-
-import java.io.InputStream;
 
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
 
-
-        DesktopPage desktop = new DesktopPage();
-        desktop.showDesktopPage();
-
+        StarterPage starter = new StarterPage();
+        starter.showStarterPage();
 
     }
 
